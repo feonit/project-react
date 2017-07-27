@@ -1,0 +1,47 @@
+.logout-dialog{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+}
+
+.logout-dialog_bg{
+  width: 100%;
+  height: 100%;
+}
+
+.logout-dialog_box{
+  display: table;
+  background: white;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 140px;
+  padding: 40px 22px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.logout-dialog_buttons{
+  margin: 0 10px;
+}
+
+.logout-dialog_bar{
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.logout-dialog_message{
+  display: table-row;
+}
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}

@@ -1,0 +1,63 @@
+.dev-panel{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000000;
+
+    .dev-panel_moved{
+        position: relative;
+        max-width: 0;
+        transition: all .4s ease-out .3s;
+        background: rgba(45, 69, 86, 0.95);
+
+        &:hover, &.js-fixed{
+            max-width: 1000px;
+        }
+
+        ul{
+            padding: 20px 5px;
+            border-radius: 20px;
+
+            .actived{
+                color: dodgerblue;
+            }
+            a:hover{
+                border-bottom: 1px solid;
+            }
+
+            .dev-panel-links-item{
+                list-style: none;
+                font-size: 16px;
+            }
+        }
+
+        .dev-panel_splinter{
+            background: greenyellow;
+            border: 3px solid green;
+            position: absolute;
+            left: -100px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            transition: all .1s ease-out;
+            transform: translateX(100%) rotate(-.8rad);
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        &:hover{
+            .dev-panel_splinter{
+                transform: translateX(100%) rotate(0rad);
+            }
+        }
+    }
+
+    .checkbox-box{
+        display: block;
+    }
+}
+
+
+
+
